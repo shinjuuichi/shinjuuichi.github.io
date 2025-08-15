@@ -39,6 +39,10 @@ header{
   color:var(--main-color);
 }
 
+nav{
+  display:flex;
+}
+
 nav a{
   margin-left:2rem;
   color:var(--text-color);
@@ -61,6 +65,12 @@ nav a.active{
 
 .section.active{
   display:flex;
+  animation:fadeIn .6s ease forwards;
+}
+
+@keyframes fadeIn{
+  from{opacity:0;transform:translateY(20px);}
+  to{opacity:1;transform:translateY(0);}
 }
 
 .home{
@@ -71,6 +81,11 @@ nav a.active{
 .home-img img{
   width:35vw;
   border-radius:50%;
+  transition:transform .3s;
+}
+
+.home-img img:hover{
+  transform:scale(1.05);
 }
 
 .home-content h1{
@@ -140,6 +155,8 @@ nav a.active{
 .skill-fill{
   height:100%;
   background:var(--main-color);
+  width:0;
+  transition:width 2s;
 }
 
 .contact-container{
@@ -186,5 +203,31 @@ nav a.active{
 
   .home-img img{
     width:70vw;
+  }
+}
+
+@media (max-width:600px){
+  header{
+    flex-direction:column;
+    padding:1rem 5%;
+  }
+
+  nav{
+    margin-top:1rem;
+    flex-direction:column;
+    align-items:center;
+  }
+
+  nav a{
+    margin:.5rem 0;
+  }
+
+  .home-content h1{
+    font-size:3rem;
+  }
+
+  .contact-container{
+    width:90%;
+    height:auto;
   }
 }
