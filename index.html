@@ -1,141 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shinjuuichi Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <script src="./script.js"></script>
-    <title>Portfolio Website</title>
+    <script defer src="script.js"></script>
 </head>
-
 <body>
     <header>
         <a href="#" class="logo">Shinjuuichi</a>
-
         <nav>
             <a href="#home" class="active">Home</a>
-            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
             <a href="#skills">Skills</a>
-            <a href="#education">Education</a>
-            <a href="#experience">Experience</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
-    <section class="home" id="home">
+
+    <section id="home" class="home section active">
         <div class="home-img">
-            <img src="main.jpg" alt="">
+            <img src="main.jpg" alt="Profile photo">
         </div>
         <div class="home-content">
-            <h1>Hi, It's <span>Shinjuuichi</span></h1>
+            <h1>Hi, I'm <span>Shinjuuichi</span></h1>
             <h3 class="typing-text">I'm a <span id="typed-text"></span></h3>
-            <p>I am passionate about game programming, back-end development, and Android app development. I enjoy
-                solving complex problems, building efficient systems, and creating interactive experiences.</p>
+            <p>I am passionate about game programming, back-end development and Android app development.</p>
             <div class="social-icons">
                 <a href="https://www.linkedin.com/in/Shinjuuichi"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="https://github.com/Shinjuuichi"><i class="fa-brands fa-github"></i></a>
                 <a href="https://www.facebook.com/Shinjuuichi/"><i class="fa-brands fa-facebook"></i></a>
                 <a href="https://www.youtube.com/@Shinjuuichi/"><i class="fa-brands fa-youtube"></i></a>
             </div>
-            <a href="" class="btn">DM me</a>
+            <a href="#contact" class="btn">Contact Me</a>
         </div>
     </section>
-    <section id="services" class="home" style="display: none;">
+
+    <section id="about" class="about section">
+        <h1>About Me</h1>
+        <p>I'm a developer who enjoys solving complex problems and building engaging digital experiences.</p>
     </section>
 
-    <section id="skills" class="home" style="display: none;">
-        <div class="home-content">
-            <h1>Skills</h1>
-            <h3>Web Skills</h3>
-            <div class="grid-container">
-                <div class="skills-bar">
-                    <div class="skill">
-                        <span class="skill-name">HTML</span>
-                        <span class="skill-percentage">75%</span>
-                        <div class="skill-bar">
-                            <div class="skill-fill" style="width: 75%;">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="skill">
-                        <span class="skill-name">CSS</span>
-                        <span class="skill-percentage">70%</span>
-                        <div class="skill-bar">
-                            <div class="skill-fill" style="width: 70%;">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="skill">
-                        <span class="skill-name">JavaScript</span>
-                        <span class="skill-percentage">60%</span>
-                        <div class="skill-bar">
-                            <div class="skill-fill" style="width: 60%;">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <section id="projects" class="projects section">
+        <h1>Projects</h1>
+        <div class="card-container">
+            <div class="card">
+                <h3>Project One</h3>
+                <p>Brief description of your project goes here.</p>
             </div>
-            <h3>Back-end Skills</h3>
-            <div class="skill">
-                <span class="skill-name">ASP.NET Core API</span>
-                <span class="skill-percentage">60%</span>
-                <div class="skill-bar">
-                    <div class="skill-fill" style="width: 60%;">
-                    </div>
-                </div>
+            <div class="card">
+                <h3>Project Two</h3>
+                <p>Brief description of your project goes here.</p>
             </div>
-            <h3>Mobile Develop Skills</h3>
-            <div class="skill">
-                <span class="skill-name">Flutter Framework</span>
-                <span class="skill-percentage">30%</span>
-                <div class="skill-bar">
-                    <div class="skill-fill" style="width: 30%;">
-                    </div>
-                </div>
-            </div>
-            <h3>Automation Skills</h3>
-            <div class="skill">
-                <span class="skill-name">Cron Job</span>
-                <span class="skill-percentage">30%</span>
-                <div class="skill-bar">
-                    <div class="skill-fill" style="width: 30%;">
-                    </div>
-                </div>
+            <div class="card">
+                <h3>Project Three</h3>
+                <p>Brief description of your project goes here.</p>
             </div>
         </div>
     </section>
 
-    <section id="education" class="home" style="display: none;">
-    </section>
-
-    <section id="experience" class="home" style="display: none;">
-    </section>
-
-    <section id="contact" class="home" style="display: none;">
-
-        <div class="home-content">
-            <h1>Contact me</h1>
-            <a href="mailto:sinlthai570@gmail.com">
-                <div class="contact-container">
-                    <i class="fa-brands fa-google fa-2xl"></i>
-                    <h2>Mail to me</h2>
+    <section id="skills" class="skills section">
+        <h1>Skills</h1>
+        <h3>Web Skills</h3>
+        <div class="grid-container">
+            <div class="skills-bar">
+                <div class="skill">
+                    <span class="skill-name">HTML</span>
+                    <span class="skill-percentage">75%</span>
+                    <div class="skill-bar"><div class="skill-fill" style="width:75%;"></div></div>
                 </div>
-            </a>
-            <a href="">
-                <div class="contact-container">
-                    <i class="fa-brands fa-discord fa-2xl"></i>
-                    <h2>DM me</h2>
+                <div class="skill">
+                    <span class="skill-name">CSS</span>
+                    <span class="skill-percentage">70%</span>
+                    <div class="skill-bar"><div class="skill-fill" style="width:70%;"></div></div>
                 </div>
-            </a>
+                <div class="skill">
+                    <span class="skill-name">JavaScript</span>
+                    <span class="skill-percentage">60%</span>
+                    <div class="skill-bar"><div class="skill-fill" style="width:60%;"></div></div>
+                </div>
+            </div>
         </div>
+        <h3>Back-end Skills</h3>
+        <div class="skill">
+            <span class="skill-name">ASP.NET Core API</span>
+            <span class="skill-percentage">60%</span>
+            <div class="skill-bar"><div class="skill-fill" style="width:60%;"></div></div>
+        </div>
+        <h3>Mobile Development Skills</h3>
+        <div class="skill">
+            <span class="skill-name">Flutter Framework</span>
+            <span class="skill-percentage">30%</span>
+            <div class="skill-bar"><div class="skill-fill" style="width:30%;"></div></div>
+        </div>
+        <h3>Automation Skills</h3>
+        <div class="skill">
+            <span class="skill-name">Cron Job</span>
+            <span class="skill-percentage">30%</span>
+            <div class="skill-bar"><div class="skill-fill" style="width:30%;"></div></div>
         </div>
     </section>
-    <script>
-        function _0x2444(_0x3794fe, _0x1eec18) { const _0x4ba398 = _0x4ba3(); return _0x2444 = function (_0x24442f, _0x41ae4a) { _0x24442f = _0x24442f - 0x1b3; let _0x3fcd74 = _0x4ba398[_0x24442f]; return _0x3fcd74; }, _0x2444(_0x3794fe, _0x1eec18); } const _0x5b0d4d = _0x2444; (function (_0xb949a6, _0x1c1efc) { const _0x4f1f6b = _0x2444, _0x5db64f = _0xb949a6(); while (!![]) { try { const _0x184921 = -parseInt(_0x4f1f6b(0x1be)) / 0x1 * (parseInt(_0x4f1f6b(0x1ca)) / 0x2) + parseInt(_0x4f1f6b(0x1c5)) / 0x3 + -parseInt(_0x4f1f6b(0x1c2)) / 0x4 * (parseInt(_0x4f1f6b(0x1bc)) / 0x5) + -parseInt(_0x4f1f6b(0x1c1)) / 0x6 * (-parseInt(_0x4f1f6b(0x1c8)) / 0x7) + -parseInt(_0x4f1f6b(0x1c6)) / 0x8 * (-parseInt(_0x4f1f6b(0x1cb)) / 0x9) + -parseInt(_0x4f1f6b(0x1b8)) / 0xa + parseInt(_0x4f1f6b(0x1b9)) / 0xb * (parseInt(_0x4f1f6b(0x1c4)) / 0xc); if (_0x184921 === _0x1c1efc) break; else _0x5db64f['push'](_0x5db64f['shift']()); } catch (_0x289a9c) { _0x5db64f['push'](_0x5db64f['shift']()); } } }(_0x4ba3, 0x468c3)); const navLinks = document[_0x5b0d4d(0x1bd)](_0x5b0d4d(0x1c3)); navLinks[_0x5b0d4d(0x1b3)](_0x24fc5f => { const _0x2f977c = _0x5b0d4d; _0x24fc5f[_0x2f977c(0x1c9)](_0x2f977c(0x1b7), function (_0x287e6e) { const _0x46d85d = _0x2f977c; _0x287e6e['preventDefault'](), navLinks[_0x46d85d(0x1b3)](_0x3a148c => _0x3a148c[_0x46d85d(0x1bf)]['remove']('active')), this[_0x46d85d(0x1bf)]['add'](_0x46d85d(0x1ba)); const _0xfd31d4 = this[_0x46d85d(0x1c7)](_0x46d85d(0x1b5)), _0x5a095f = document[_0x46d85d(0x1c0)](_0xfd31d4); document[_0x46d85d(0x1bd)](_0x46d85d(0x1b4))[_0x46d85d(0x1b3)](_0x34d724 => { const _0x4e93d6 = _0x46d85d; _0x34d724[_0x4e93d6(0x1b6)][_0x4e93d6(0x1bb)] = 'none'; }), _0x5a095f[_0x46d85d(0x1b6)][_0x46d85d(0x1bb)] = 'flex'; }); }); function _0x4ba3() { const _0xf06015 = ['1587636AMkiAC', '758776KfjiDl', 'getAttribute', '169337ddqsTL', 'addEventListener', '18378lmiCEF', '27rsidfc', 'forEach', 'section', 'href', 'style', 'click', '5576320hocPMO', '5698TTFYDS', 'active', 'display', '50dZOoND', 'querySelectorAll', '37meXiyQ', 'classList', 'querySelector', '114uBpWsy', '181208FfTHhn', 'nav\x20a', '8484tmAENd']; _0x4ba3 = function () { return _0xf06015; }; return _0x4ba3(); }
-    </script>
+
+    <section id="contact" class="contact section">
+        <h1>Contact Me</h1>
+        <a href="mailto:sinlthai570@gmail.com">
+            <div class="contact-container">
+                <i class="fa-brands fa-google fa-2xl"></i>
+                <h2>Email me</h2>
+            </div>
+        </a>
+        <a href="#">
+            <div class="contact-container">
+                <i class="fa-brands fa-discord fa-2xl"></i>
+                <h2>DM me</h2>
+            </div>
+        </a>
+    </section>
 </body>
-
 </html>
