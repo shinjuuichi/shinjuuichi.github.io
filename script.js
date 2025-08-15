@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const links = document.querySelectorAll('nav a');
   const sections = document.querySelectorAll('.section');
+  const skillFills = document.querySelectorAll('.skill-fill');
 
   links.forEach(link => {
     link.addEventListener('click', e => {
@@ -37,6 +38,16 @@ document.addEventListener('DOMContentLoaded', () => {
       sections.forEach(sec => sec.classList.remove('active'));
       const target = document.querySelector(link.getAttribute('href'));
       target.classList.add('active');
+
+      if (target.id === 'skills') {
+        skillFills.forEach(fill => {
+          fill.style.width = fill.dataset.fill;
+        });
+      } else {
+        skillFills.forEach(fill => {
+          fill.style.width = 0;
+        });
+      }
     });
   });
 });
